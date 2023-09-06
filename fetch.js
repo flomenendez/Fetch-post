@@ -22,8 +22,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         return response.json();
     })
     .then((data) => {
-        console.log(`Solicitud POST exitosa!`, data);
-        alert(`Solicitud POST exitosa!` + JSON.stringify(data));
+        alert(`Solicitud POST exitosa!` + " " + data.nombre + " "+ data.apellido + " " +data.fechaNacimiento);
     })
     .catch((error) => {
         console.error(`Hubo un error`, error);
